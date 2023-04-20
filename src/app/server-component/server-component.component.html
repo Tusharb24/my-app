@@ -1,0 +1,19 @@
+<label>Server Name</label>
+<!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
+<input type="text" class="form-control" [(ngModel)]="serverName">
+<p>{{serverName}}</p>
+<button class="btn btn-primary"
+    [disabled] = "!isAllowesNewServer"
+    (click)="onServerCreated()"> Add Server</button>
+ <p *ngIf="serverCreated">Server was created with Id {{serverName}}</p>   
+
+ <!-- <br><br>
+ <label>User Details</label>
+ <input type="text" class="form-control" [(ngModel)]="userName">
+ <button class="btn btn-primary" 
+    [disabled]="userName === ''" 
+    (click)="resetUser()">Reset User</button>
+ <p>{{userName}}</p> -->
+
+ <p *ngFor="let server of servers" [ngStyle]="{backgroundColor : getColor()}">Server with Id {{serverName}} is {{serverStatus}}</p>
+ 
