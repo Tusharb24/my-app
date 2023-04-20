@@ -1,6 +1,7 @@
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+This projecy has basics about databinding: Property binding, Event Binding, String interpolation and 2 way databinding using ngModel
 
 ## Development server
 
